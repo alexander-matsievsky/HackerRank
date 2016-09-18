@@ -12,7 +12,8 @@ exports.createGHIssuesForHRSubDomain = function (password, hrSubDomain) {
         .catch(console.error.bind(console));
 };
 
+/*
 exports.createGHIssuesForHRSubDomain(
     'https://github.com/settings/tokens',
     'https://www.hackerrank.com/domains/fp/recursion'
-);
+ );*/
