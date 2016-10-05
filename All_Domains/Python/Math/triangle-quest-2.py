@@ -1,2 +1,2 @@
 for i in range(1, int(input()) + 1):
-    print([0, 1, 11, 111, 1111, 11111, 111111, 1111111, 11111111, 111111111][i] ** 2)
+    print(sum(map(lambda x: 10 ** x, range(0, i))) ** 2)
