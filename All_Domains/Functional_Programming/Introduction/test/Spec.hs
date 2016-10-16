@@ -1,3 +1,7 @@
+import           FpHelloWorld
 import           FpSolveMeFirst
 
-main = FpSolveMeFirst.runTests
+main = do
+    _ <- FpSolveMeFirst.runTests
+    _ <- FpHelloWorld.runTests
+    return ()

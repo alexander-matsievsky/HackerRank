@@ -1,5 +1,5 @@
 {-# LANGUAGE TemplateHaskell #-}
-module FpSolveMeFirst(runTests) where
+module FpHelloWorld(runTests) where
 import           Test.QuickCheck
 import           Test.QuickCheck.All
 
@@ -8,11 +8,9 @@ main = interact run
 
 run :: String -> String
 run input = output where
-    a:b:_ = map (read::String -> Integer) . lines $ input
-    output = show $ a + b
+    output = "Hello World"
 
-prop_run = run "2\n\
-\3\n" == "5"
+prop_run = run "" == "Hello World"
 
 return []
 runTests = $quickCheckAll
