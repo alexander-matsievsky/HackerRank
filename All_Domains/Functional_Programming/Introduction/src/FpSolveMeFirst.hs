@@ -1,22 +1,18 @@
-{-# LANGUAGE RankNTypes      #-}
 {-# LANGUAGE TemplateHaskell #-}
+module FpSolveMeFirst(runTests) where
+import Test.QuickCheck
+import Test.QuickCheck.All
 
-module FpSolveMeFirst (fpSolveMeFirst, runTests) where
-import           Test.QuickCheck.All
+main :: IO ()
+main = interact run
 
-fpSolveMeFirst :: forall t. Num t => t -> t -> t
-fpSolveMeFirst a b = c
-    where c = a + b
+run :: String -> String
+run input = output where
+    a:b:_ = map (read::String -> Integer) . lines $ input
+    output = show $ a + b
 
-hrFpSolveMeFirst input = output where
-    sa:sb:_ = lines input
-    c = fpSolveMeFirst (toInteger sa) (toInteger sb)
-    output = unlines [fromInteger c]
-
-prop_fpSolveMeFirst :: forall t. (Num t, Eq t) => t -> t -> Bool
-prop_fpSolveMeFirst a b =
-    a + b == fpSolveMeFirst a b
+prop_run = run "2\n\
+\3\n" == "5"
 
 return []
-runTests :: IO Bool
 runTests = $quickCheckAll
