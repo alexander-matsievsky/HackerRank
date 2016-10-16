@@ -4,6 +4,7 @@ import           FpFilterPositionsInAList
 import           FpHelloWorld
 import           FpHelloWorldNTimes
 import           FpListReplication
+import           FpReverseAList
 import           FpSolveMeFirst
 
 main = do
@@ -14,4 +15,5 @@ main = do
     _ <- FpFilterArray.runTests
     _ <- FpFilterPositionsInAList.runTests
     _ <- FpArrayOfNElements.runTests
+    _ <- FpReverseAList.runTests
     return ()
