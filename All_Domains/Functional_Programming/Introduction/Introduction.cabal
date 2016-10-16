@@ -19,6 +19,7 @@ library
                      , FpHelloWorld
                      , FpHelloWorldNTimes
                      , FpListReplication
+                     , FpFilterArray
   build-depends:       base >= 4.7 && < 5
                      , QuickCheck
   default-language:    Haskell2010

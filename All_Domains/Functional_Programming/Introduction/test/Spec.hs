@@ -1,3 +1,4 @@
+import           FpFilterArray
 import           FpHelloWorld
 import           FpHelloWorldNTimes
 import           FpListReplication
@@ -8,4 +9,5 @@ main = do
     _ <- FpHelloWorld.runTests
     _ <- FpHelloWorldNTimes.runTests
     _ <- FpListReplication.runTests
+    _ <- FpFilterArray.runTests
     return ()
