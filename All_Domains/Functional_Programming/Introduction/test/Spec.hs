@@ -7,6 +7,7 @@ import           FpListReplication
 import           FpReverseAList
 import           FpSolveMeFirst
 import           FpSumOfOddElements
+import           FpListLength
 
 main = do
     _ <- FpSolveMeFirst.runTests
@@ -18,4 +19,5 @@ main = do
     _ <- FpArrayOfNElements.runTests
     _ <- FpReverseAList.runTests
     _ <- FpSumOfOddElements.runTests
+    _ <- FpListLength.runTests
     return ()
