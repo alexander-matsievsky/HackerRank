@@ -1,13 +1,14 @@
+import           EvalEx
 import           FpArrayOfNElements
 import           FpFilterArray
 import           FpFilterPositionsInAList
 import           FpHelloWorld
 import           FpHelloWorldNTimes
+import           FpListLength
 import           FpListReplication
 import           FpReverseAList
 import           FpSolveMeFirst
 import           FpSumOfOddElements
-import           FpListLength
 import           FpUpdateList
 
 main = do
@@ -22,4 +23,5 @@ main = do
     _ <- FpSumOfOddElements.runTests
     _ <- FpListLength.runTests
     _ <- FpUpdateList.runTests
+    _ <- EvalEx.runTests
     return ()
