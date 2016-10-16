@@ -23,6 +23,7 @@ library
                      , FpFilterPositionsInAList
                      , FpArrayOfNElements
                      , FpReverseAList
+                     , FpSumOfOddElements
   build-depends:       base >= 4.7 && < 5
                      , QuickCheck
   default-language:    Haskell2010
