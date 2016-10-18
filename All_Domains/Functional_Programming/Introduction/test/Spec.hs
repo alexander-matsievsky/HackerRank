@@ -1,3 +1,4 @@
+import           AreaUnderCurvesAndVolumeOfRevolvingACurv
 import           EvalEx
 import           FpArrayOfNElements
 import           FpFilterArray
@@ -24,4 +25,5 @@ main = do
     _ <- FpListLength.runTests
     _ <- FpUpdateList.runTests
     _ <- EvalEx.runTests
+    _ <- AreaUnderCurvesAndVolumeOfRevolvingACurv.runTests
     return ()
