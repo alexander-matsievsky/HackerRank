@@ -11,6 +11,7 @@ import           FpReverseAList
 import           FpSolveMeFirst
 import           FpSumOfOddElements
 import           FpUpdateList
+import           FunctionsOrNot
 
 main = do
     _ <- FpSolveMeFirst.runTests
@@ -26,4 +27,5 @@ main = do
     _ <- FpUpdateList.runTests
     _ <- EvalEx.runTests
     _ <- AreaUnderCurvesAndVolumeOfRevolvingACurv.runTests
+    _ <- FunctionsOrNot.runTests
     return ()
