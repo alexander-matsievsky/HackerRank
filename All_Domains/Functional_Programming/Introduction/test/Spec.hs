@@ -12,6 +12,7 @@ import           FpSolveMeFirst
 import           FpSumOfOddElements
 import           FpUpdateList
 import           FunctionsOrNot
+import           LambdaMarchComputeThePerimeterOfAPolygon
 
 main = do
     _ <- FpSolveMeFirst.runTests
@@ -28,4 +29,5 @@ main = do
     _ <- EvalEx.runTests
     _ <- AreaUnderCurvesAndVolumeOfRevolvingACurv.runTests
     _ <- FunctionsOrNot.runTests
+    _ <- LambdaMarchComputeThePerimeterOfAPolygon.runTests
     return ()
