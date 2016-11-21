@@ -1,3 +1,4 @@
+import           ConvexHullFp
 import           FunctionalProgrammingWarmupsInRecursionFibonacciNumbers
 import           FunctionalProgrammingWarmupsInRecursionGcd
 import           FunctionsAndFractalsSierpinskiTriangles
@@ -12,4 +13,5 @@ main = do
     _ <- FunctionsAndFractalsSierpinskiTriangles.runTests
     _ <- StringMingling.runTests
     _ <- StringOPermute.runTests
+    _ <- ConvexHullFp.runTests
     return ()

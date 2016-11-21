@@ -21,6 +21,7 @@ library
                      , FunctionsAndFractalsSierpinskiTriangles
                      , StringMingling
                      , StringOPermute
+                     , ConvexHullFp
   build-depends:       base >= 4.7 && < 5
                      , QuickCheck
   default-language:    Haskell2010
