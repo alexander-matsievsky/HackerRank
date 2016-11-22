@@ -7,6 +7,7 @@ import           PrefixCompression
 import           StringCompression
 import           StringMingling
 import           StringOPermute
+import           StringReductions
 
 main = do
     _ <- FunctionalProgrammingWarmupsInRecursionGcd.runTests
@@ -18,4 +19,5 @@ main = do
     _ <- ConvexHullFp.runTests
     _ <- StringCompression.runTests
     _ <- PrefixCompression.runTests
+    _ <- StringReductions.runTests
     return ()
